@@ -1,4 +1,4 @@
-package com.wixia.toolbox.fsm;
+package example.fsm;
 
 /**
  * Hello world!
