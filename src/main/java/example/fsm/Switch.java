@@ -4,14 +4,18 @@
  * and open the template in the editor.
  */
 
-package com.wixia.toolbox.fsm;
+package example.fsm;
+
+import com.wixia.toolbox.fsm.FiniteStateMachine;
 
 /**
  *
  * @author safi
  */
-public interface FSMControl {
- 
-  String getCurrentState();
+@FiniteStateMachine(states = {On.class, Off.class}, initialState = Off.class)
+public interface Switch {
+  
+  void turnOn();
+  void turnOff();
   
 }
