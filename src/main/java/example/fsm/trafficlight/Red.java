@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package example.fsm;
+package example.fsm.trafficlight;
 
 import com.wixia.toolbox.fsm.Transition;
 
@@ -12,16 +12,12 @@ import com.wixia.toolbox.fsm.Transition;
  *
  * @author safi
  */
-public class On {
+public class Red extends AbstractTrafficLight {
   
-  @Transition(newState = Off.class)
-  public void turnOff() {
-    System.out.printf("Lights are off!\n");
-  }
-
-  @Transition(newState = On.class)
-  public void turnOn() {
-    System.out.printf("Lights are already on!\n");
+  @Override
+  @Transition(newState = YellowRed.class)
+  public void advance() {
+    super.advance(); 
   }
   
 }

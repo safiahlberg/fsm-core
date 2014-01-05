@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package example.fsm;
+package example.fsm.onoffswitch;
 
 import com.wixia.toolbox.fsm.FiniteStateMachine;
 

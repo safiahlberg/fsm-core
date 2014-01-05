@@ -1,4 +1,4 @@
-package example.fsm;
+package example.fsm.onoffswitch;
 
 import com.wixia.toolbox.fsm.FSMBuilder;
 import com.wixia.toolbox.fsm.FSMControl;

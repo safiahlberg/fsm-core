@@ -50,6 +50,15 @@ public class FSMBuilder {
     return buildFSM(clazz, new FSMInvocationHandler(stateClasses, initialState, finalState));
   }
   
+  /**
+   * Create a proxy instance for the state class and for FSMControl at the 
+   * same time
+   * 
+   * @param <T>
+   * @param clazz
+   * @param invocationHandler
+   * @return 
+   */
   static <T> T buildFSM(Class<?> clazz, FSMInvocationHandler invocationHandler) {
     return (T) Proxy.newProxyInstance(clazz.getClassLoader(), new Class<?>[] {clazz, FSMControl.class}, invocationHandler);
   }
