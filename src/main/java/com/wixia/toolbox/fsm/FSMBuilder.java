@@ -55,7 +55,7 @@ public class FSMBuilder {
    * same time
    * 
    * @param <T>
-   * @param clazz
+   * @param clazz This will be the Finite State Machine class (the one with FiniteStateMachine annotation)
    * @param invocationHandler
    * @return 
    */
